@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: gray;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.frame {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.sum {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-weight: bold;
+  color: #111;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.dice {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.face {
+  display: inline-block;
+  background-color: white;
+  font-size: 0;
+  vertical-align: bottom;
+  width: 100px;
+  height: 100px;
+}
+
+.row {
+  white-space: nowrap;
+  font-size: 0;
+  text-align: center;
+}
+
+/*
+ * Visualization
+ */
+.worlds {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 0;
+}
+
+.world {}
+  .world--active {
+    outline: 5px solid red;
+  }
+  .world > .face {
+    width: 15px;
+    height: 15px;
+  }
