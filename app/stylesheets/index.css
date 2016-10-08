@@ -15,14 +15,6 @@ body {
 }
 
 body {
-  background-color: gray;
-  color: white;
-  -webkit-font-smoothing: antialiased;
-  font-family: sans-serif;
-}
-
-body {
-  margin: 0;
   background-color: black;
   color: white;
   -webkit-font-smoothing: antialiased;
@@ -74,9 +66,6 @@ svg {
   text-align: center;
 }
 
-/*
- * Visualization
- */
 .worlds {
   position: fixed;
   top: 20px;
@@ -86,9 +75,30 @@ svg {
 
 .world {}
   .world--active {
-    outline: 5px solid red;
+    outline: 4px solid red;
   }
   .world > .face {
     width: 15px;
     height: 15px;
   }
+
+@media (max-width: 600px) {
+  .dice {
+    top: 60%;
+    left: 60%;
+  }
+
+  .face {
+    width: 50px;
+    height: 50px;
+  }
+
+  .world > .face {
+    width: 10px;
+    height: 10px;
+  }
+
+  .world--active {
+    outline: 2px solid red;
+  }
+}
