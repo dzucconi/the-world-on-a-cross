@@ -24,6 +24,7 @@
     "brunch": "^2.4.0",
     "clean-css-brunch": "^2.0.0",
     "css-brunch": "^2.0.0",
+    "digest-brunch": "^1.6.0",
     "eslint": "^3.7.1",
     "javascript-brunch": "^2.0.0",
     "postcss-brunch": "^2.0.3",
