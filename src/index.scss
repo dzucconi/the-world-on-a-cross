@@ -18,7 +18,7 @@ body {
   background-color: black;
   color: white;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 svg {
@@ -73,14 +73,16 @@ svg {
   font-size: 0;
 }
 
-.world {}
-  .world--active {
+.world {
+  &--active {
     outline: 4px solid red;
   }
-  .world > .face {
+
+  > .face {
     width: 15px;
     height: 15px;
   }
+}
 
 @media (max-width: 600px) {
   .dice {
